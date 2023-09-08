@@ -65,5 +65,41 @@ console.log(history);
 
     let parent = document.getElementById("list");
 
-    parent.appendChild(child);
+    // parent.appendChild(child);
+
+    let items = document.getElementsByTagName('li');
+
+    // parent.insertBefore(child, items[0]);
 }) ();
+
+(function () {
+    let parent = document.getElementById('list_new');
+    let items = document.getElementsByTagName('li');
+
+    // parent.removeChild(items[3]);
+})();
+
+(function () {
+    let child = document.createElement("li");
+
+    let text = document.createTextNode("10 Item!");
+
+    child.appendChild(text);
+
+    let parent = document.getElementById("list_new");
+
+    // parent.appendChild(child);
+
+    let items = document.getElementsByTagName('li');
+
+    // parent.replaceChild(child, items[1]);
+}) ();
+
+// const bodyelement = document.body;
+// const headelement = document.head;
+
+// console.log(bodyelement);
+// console.log(headelement);
+
+let elems = document.querySelectorAll('.wrapper__list')
+console.log(elems);
